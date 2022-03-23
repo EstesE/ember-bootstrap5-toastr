@@ -1,0 +1,29 @@
+{{page-title "Index"}}
+<div class="row">
+  <div class="col-sm-12">
+    <h2>Index</h2>
+
+    <button type="button" class="btn btn-outline-primary" {{on "click" this.test}}>Test <i class="bi-alarm"></i></button>
+
+    <svg class="bi" width="32" height="32" fill="red">
+      <use xlink:href="/assets/bootstrap/bootstrap-icons.svg#heart-fill"/>
+    </svg>
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="/assets/bootstrap/bootstrap-icons.svg#toggles"/>
+    </svg>
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="/assets/bootstrap/bootstrap-icons.svg#bootstrap"/>
+    </svg>
+    <svg class="bi" width="32" height="32" fill="currentColor">
+      <use xlink:href="/assets/bootstrap/bootstrap-icons.svg#shop"/>
+    </svg>
+
+    <img src="/assets/bootstrap/bootstrap.svg" alt="Bootstrap" width="32" height="32">
+
+    <i class="bi-alarm"></i>
+    <i class="bi-bootstrap"></i>
+
+    <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+    {{outlet}}
+  </div>
+</div>
