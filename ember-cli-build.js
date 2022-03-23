@@ -6,17 +6,29 @@ module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     sassOptions: {
-      includePaths: ['node_modules/bootstrap/scss', 'node_modules/bootstrap-icons/font/', 'node_modules/toastr'],
+      includePaths: [
+        'node_modules/bootstrap/scss',
+        'node_modules/bootstrap-icons/font/',
+        'node_modules/toastr',
+      ],
     },
   });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
   app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
-  app.import('node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff', { destDir: 'assets/fonts' });
-  app.import('node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2', { destDir: 'assets/fonts' });
-  app.import('node_modules/bootstrap-icons/bootstrap-icons.svg', { destDir: 'assets/bootstrap' });
-  app.import('node_modules/bootstrap-icons/icons/bootstrap.svg', { destDir: 'assets/bootstrap' });
+  app.import('node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff', {
+    destDir: 'assets/fonts',
+  });
+  app.import('node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2', {
+    destDir: 'assets/fonts',
+  });
+  app.import('node_modules/bootstrap-icons/bootstrap-icons.svg', {
+    destDir: 'assets/bootstrap',
+  });
+  app.import('node_modules/bootstrap-icons/icons/bootstrap.svg', {
+    destDir: 'assets/bootstrap',
+  });
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That

@@ -1,8 +1,8 @@
 {
-  "name": "online-application",
-  "version": "0.0.0",
+  "name": "ember-bootstrap5-toastr",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for online-application goes here",
+  "description": "Small description for ember-bootstrap5-toastr goes here",
   "repository": "",
   "license": "MIT",
   "author": "",

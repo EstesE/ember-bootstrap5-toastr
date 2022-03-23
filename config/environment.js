@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'online-application',
+    modulePrefix: 'ember-bootstrap5-toastr',
     environment,
     rootURL: '/',
     locationType: 'history',

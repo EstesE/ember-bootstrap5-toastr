@@ -1,5 +1,5 @@
-import Application from 'online-application/app';
-import config from 'online-application/config/environment';
+import Application from 'ember-bootstrap5-toastr/app';
+import config from 'ember-bootstrap5-toastr/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

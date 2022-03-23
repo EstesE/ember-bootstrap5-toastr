@@ -1,7 +1,7 @@
 import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
-import config from 'online-application/config/environment';
+import config from 'ember-bootstrap5-toastr/config/environment';
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
