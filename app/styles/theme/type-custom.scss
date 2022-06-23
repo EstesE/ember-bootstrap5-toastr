@@ -1,0 +1,89 @@
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://aspen-web.azureedge.net/css/roboto/roboto-v16-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-weight: $font-weight-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+// lead overrides
+.lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+  line-height: $lead-line-height;
+  letter-spacing: $lead-letter-spacing;
+
+  // @media (min-width: $screen-sm-min) {
+  //   font-size: $lead-font-size-sm
+  // }
+}
+
+// improve list readability
+.list-spaced li {
+  margin-bottom: 3px;
+}
+
+// serif family helper
+// .text-serif {
+//   font-family: $font-family-serif;
+// }
+
+// responsive text helpers
+.text-xs-left   { text-align: left; }
+.text-xs-right  { text-align: right; }
+.text-xs-center { text-align: center; }
+
+// @media (min-width: $screen-sm-min) {
+//   .text-sm-left   { text-align: left; }
+//   .text-sm-right  { text-align: right; }
+//   .text-sm-center { text-align: center; }
+// }
+
+// @media (min-width: $screen-md-min) {
+//   .text-md-left   { text-align: left; }
+//   .text-md-right  { text-align: right; }
+//   .text-md-center { text-align: center; }
+// }
+
+// @media (min-width: $screen-lg-min) {
+//   .text-lg-left   { text-align: left; }
+//   .text-lg-right  { text-align: right; }
+//   .text-lg-center { text-align: center; }
+// }

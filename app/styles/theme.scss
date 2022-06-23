@@ -1,0 +1,72 @@
+// // Body
+$body-bg: #f5f8fa;
+$font-size-base: 1.0rem;
+
+
+
+// Gray Scale
+$gray-darker:   #122a38;
+$gray-dark:     #1e3948;
+$gray:          #536570;
+$gray-light:    #9da9b0;
+$gray-lighter:  #d4dbe0;
+$gray-lightest: #f5f8fa;
+
+
+// Brand Scale
+$brand-primary: #0272b6;
+$brand-success: #4eb76e;
+$brand-warning: #cbb956;
+$brand-danger:  #bf5329;
+$brand-info:    #8eb4cb;
+
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$error-color: $brand-danger;
+
+$breadcrumb-bg: $brand-primary;
+$breadcrumb-color: #fff;
+$breadcrumb-active-color: $gray-lighter;
+
+// Alerts
+$alert-warning-border: #E6D0A1;
+
+// Block
+$block-color:              inherit;
+$block-bg:                 #fff;
+$block-color-inverted:     #fff;
+$block-bg-inverted:        #000;
+$block-title-font-size-sm: floor(($font-size-base * 4));
+$block-title-font-size:    floor(($font-size-base * 3));
+$block-lead-font-size-sm:  floor(($font-size-base * 1.5));
+$block-lead-font-size:     floor(($font-size-base * 1.3));
+$block-vertical-padding:   120px;
+
+// Text Color
+$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$text-color:             $gray-dark;
+$letter-spacing-base:    0;
+$line-height-base:       1.6;
+$font-weight-base:       400;
+
+
+.navbar-fixed-top {
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.site-navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: #d3e0e9;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: 300;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 22px;
+  height: 50px;
+}

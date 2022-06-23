@@ -1,0 +1,124 @@
+// RE-WRITE: Compare with LESS version.
+
+.text-ribbon {
+  position: relative;
+  left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.text-ribbon:before {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  content: '';
+  width: 20px;
+  height: 100%;
+  bottom: 0;
+  background-color: inherit;
+}
+.text-ribbon span {
+  position: relative;
+  left: -10px;
+}
+
+// this is the super legit way to do text-ribbons,
+// but we only allow firefox to do this for browser support reasons
+@-moz-document url-prefix() {
+  .text-ribbon {
+    box-decoration-break: clone;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  // undo hack above for firefox as well
+  .text-ribbon span {
+    left: auto;
+  }
+  .text-ribbon:before {
+    display: none;
+  }
+}
+
+.text-ribbon-input {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px;
+  font-weight: normal;
+  color: inherit;
+  background-color: #000;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  @include placeholder(inherit);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.text-ribbon-inputs-split {
+  @include clearfix();
+
+  .text-ribbon-input {
+    float: left;
+    width: 49%;
+
+    + .text-ribbon-input {
+      margin-left: 2%;
+    }
+  }
+}
+
+.text-ribbon-top,
+.text-ribbon-bottom,
+.text-ribbon-center, {
+  // @include text-ribbon;
+  position: absolute;
+
+  a, a:active, a:hover, h1, h2, h3, h4, h5 {
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+.text-ribbon-top {
+  top: 2px;
+  right: 50px;
+  left: 50px;
+}
+
+.text-ribbon-bottom {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.text-ribbon-center {
+    top: 40%;
+    right: 15%;
+    left: 15%;
+}
+
+.text-ribbon-opaque {
+  opacity: .8;
+}
+
+.text-ribbon-primary {
+  background-color: fade($brand-primary, 80%);
+}
+.text-ribbon-success {
+  background-color: fade($brand-success, 80%);
+}
+.text-ribbon-warning {
+  background-color: fade($brand-warning, 80%);
+}
+.text-ribbon-danger  {
+  background-color: fade($brand-danger, 80%);
+}
+.text-ribbon-info    {
+  background-color: fade($brand-info, 80%);
+}

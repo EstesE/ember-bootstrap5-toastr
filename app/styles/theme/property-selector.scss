@@ -1,0 +1,51 @@
+.property-selector {
+  
+  .btn {
+    width: 400px;
+    background-color: $body-bg;
+    border: 1px solid #d3e0e9;
+    
+    img {
+      margin-right: 10px;
+      width: 75px;
+      border: none;
+    }
+    
+    .title {
+      font-size: 1.2em;
+      padding-top: 15px;
+    }
+  }
+  
+  .dropdown-menu {
+    padding: 10px;
+    
+    .filter-list {
+      .filter-list-results {
+        height: auto;
+        max-height:350px;
+        overflow-x: hidden;
+      
+        .filter-list-results-item {
+          a {
+            font-size: 1.1em;
+            color: #444;
+            cursor: pointer;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            height: 45px;
+          
+            img {
+              padding: 6px 0;
+              margin-right: 10px;
+              width: 75px;
+              border: none;
+            }
+          }
+        }
+      }
+    } 
+  } 
+}

@@ -1,0 +1,15 @@
+@mixin truncate($width: 275px, $white-space: nowrap) {
+  max-width: $width;
+  white-space: $white-space;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin pop($transform-time: .25s, $scale: 1.1) {
+  transition: transform $transform-time;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale($scale) translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,18 @@
+.page-header {
+  margin-top: 0;
+  padding-bottom: 0;
+
+  
+  .page-title {
+    margin-top: 0;
+  }
+  
+  .page-subtitle {
+    margin-bottom: ($spacer-y * .25);
+    font-weight: normal;
+    font-size: 85%;
+    color: lighten($gray, 35%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

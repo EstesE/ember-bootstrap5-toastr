@@ -1,0 +1,95 @@
+.panel-card {
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #d8d8d8;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+}
+
+.panel-card .panel-heading {
+  border-radius: 0;
+  padding: 0;
+  height: 5px;
+}
+
+.panel-card .panel-footer {
+  border: none;
+  background-color: #fff;
+  text-align: left;
+
+  a {
+    color: #427fed;
+  }
+}
+
+.panel-card-blue .panel-heading, .panel-card-pending .panel-heading {
+  background-color: #76a7fa;
+}
+
+.panel-card-red .panel-heading, .panel-card-received .panel-heading {
+  background-color: #e46f61;
+}
+
+.panel-card-yellow .panel-heading, .panel-card-rejected .panel-heading {
+  background-color: #fbcb43;
+}
+
+.panel-card-green .panel-heading, .panel-card-vouchered .panel-heading {
+  background-color: #53a93f;
+}
+
+.panel-card-purple .panel-heading {
+  background-color: #bc5679;
+}
+
+.panel-card-light-blue .panel-heading {
+  background-color: #4dbfd9;
+}
+
+.panel-card-black .panel-heading {
+  background-color: #000000;
+}
+
+.panel-card-title-bar {
+  &:hover {
+    cursor: pointer;
+  }
+
+  .fa {
+    float: right;
+  }
+}
+
+.panel-card-content {
+  overflow: hidden;
+  position: relative;
+}
+
+.panel-card-collapsed {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.panel-card-expanded {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+  overflow: visible;
+}
+
+.panel-content-hidden {
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+.panel-content-visible {
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+}
+
+.panel-shadow {
+  //box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+}

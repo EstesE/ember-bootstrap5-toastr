@@ -1,0 +1,29 @@
+#loading {
+  width: 80%;
+  height: 600px;
+  text-align: center;
+  background: url("https://aspensquare.blob.core.windows.net/apps/shared/images/progress.gif") no-repeat center;
+  background-size: 200px 200px;
+}
+
+.required:after {
+  color: $error-color;
+  content: " *";
+}
+
+.has-error.validation-message {
+  color: $error-color;
+  font-style: italic;
+}
+
+.panel-card div.odd {
+  background: #e0e7f0 !important;
+}
+
+.odd .panel-footer {
+  background: #e0e7f0 !important;
+}
+
+.typeahead-aspen {
+  padding-top: 1px;
+}

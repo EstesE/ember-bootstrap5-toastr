@@ -1,0 +1,124 @@
+// RE-WRITE: Compare with LESS version.
+// Modal extensions
+//
+// For tweaking scrolling, positioning, and more.
+
+.modal-body-scroller {
+  max-height: 500px;
+  overflow: auto;
+  border-radius: $border-radius-large;
+}
+
+.modal-body + .modal-body {
+  border-top: 1px solid $modal-footer-border-color;
+}
+
+
+// Modal actions
+//
+// Split equal width buttons at the bottom of modals, in place of modal footers.
+
+.modal-actions {
+  @include clearfix;
+}
+
+.modal-action {
+  float: left;
+  width: 50%;
+  padding: $modal-inner-padding;
+  border: solid $modal-footer-border-color;
+  border-width: 1px 0 0;
+
+  + .modal-action {
+    border-left-width: 1px;
+  }
+
+  &:first-child {
+    border-bottom-left-radius: ($border-radius-large - 1);
+  }
+
+  &:last-child {
+    border-bottom-right-radius: ($border-radius-large - 1);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-color: $modal-footer-border-color;
+  }
+}
+
+.ember-modal-dialog {
+  border-radius: 1px;
+  background-color: #fff;
+  box-shadow: 0 0 1px #222;
+  // @include p-l;
+  // @include p-r;
+  // @include p-t-0;
+  // @include p-b-0;
+}
+.ember-modal-overlay.translucent {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ember-modal-overlay {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+}
+.ember-modal-dialog {
+  z-index: 1050;
+  position: fixed;
+
+  .ember-modal-dialog-in-place {
+    position: static;
+  }
+}
+
+body.centered-modal-showing {
+  overflow: hidden;
+}
+.centered-scrolling-wrapper {
+  position: fixed;
+  z-index: 1060;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-y: scroll;
+}
+
+.centered-scrolling-overlay {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  justify-content: center;
+  -webkit-justify-content: center;
+  min-height: 100vh;
+  padding: 1em;
+  position: relative;
+  height: auto;
+}
+
+.centered-scrolling-overlay.translucent {
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+/* basic modal style (an example, this is not necessary for the centering) */
+.centered-scrolling-container {
+  position: relative;
+  background-color: white;
+  min-width: 30em;
+  padding: 3em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px 4px rgba(0,0,0,0.30);
+}
