@@ -1,4 +1,4 @@
-import { module, test } from 'qunit';
+import { done, module, test } from 'qunit';
 import { visit, currentURL, click } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
@@ -14,5 +14,12 @@ module('Acceptance | modal', function (hooks) {
 
     await click('[data-test-modal-close]');
     assert.dom('[data-test-modal]').doesNotHaveStyle({ display: 'block' }, 'Modal appears to be closed but "modal-backdrop" is outside of qunit container');
+
+    // // Hackery to get rid of the modal-backdrop
+    // done(function (details) {
+    //   let myElement = document.getElementsByClassName('modal-backdrop')[0];
+    //   myElement.remove();
+    //   console.log('Removed `modal-backdrop`');
+    // });
   });
 });
