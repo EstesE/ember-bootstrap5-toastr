@@ -15,11 +15,14 @@ module('Acceptance | modal', function (hooks) {
     await click('[data-test-modal-close]');
     assert.dom('[data-test-modal]').doesNotHaveStyle({ display: 'block' }, 'Modal appears to be closed but "modal-backdrop" is outside of qunit container');
 
-    // // Hackery to get rid of the modal-backdrop
-    // done(function (details) {
-    //   let myElement = document.getElementsByClassName('modal-backdrop')[0];
-    //   myElement.remove();
-    //   console.log('Removed `modal-backdrop`');
-    // });
+    // Hackery to get rid of the modal-backdrop since it appears outside the qunit container
+    done(function (details) {
+      console.log(details);
+      let myElement = document.getElementsByClassName('modal-backdrop')[0];
+      myElement.remove();
+      console.log('Removed `modal-backdrop`');
+    });
+
+    assert.dom('modal-backdrop').doesNotExist('modal-backdrop removed via javascript');
   });
 });
